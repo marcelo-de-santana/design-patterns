@@ -1,5 +1,10 @@
 package factory;
 
+import factory.produto.Produto;
+import factory.produto.ProdutoDigital;
+import factory.produto.ProdutoFisico;
+import factory.produto.TipoProdutoEnum;
+
 public class ProdutoFactory {
     public static Produto getInstance(TipoProdutoEnum tipoProdutoEnum) {
         switch (tipoProdutoEnum) {

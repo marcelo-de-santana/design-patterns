@@ -1,8 +1,8 @@
 
-import factory.ProdutoDigital;
 import factory.ProdutoFactory;
-import factory.ProdutoFisico;
-import factory.TipoProdutoEnum;
+import factory.produto.ProdutoDigital;
+import factory.produto.ProdutoFisico;
+import factory.produto.TipoProdutoEnum;
 
 public class TesteFactory {
 

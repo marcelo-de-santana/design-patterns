@@ -1,4 +1,4 @@
-package factory;
+package factory.produto;
 
 public enum TipoProdutoEnum {
     FISICO,
