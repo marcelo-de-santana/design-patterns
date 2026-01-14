@@ -1,14 +1,23 @@
+import prototype.BotaoRegistry;
+
 public class TestePrototype {
     public static void main(String[] args) {
-        // Implementação de teste para o padrão Prototype
-        // Criação de um objeto original
-       // Produto produtoOriginal = new Produto("Caneta", 2.5);
+        var botaoVermelho = BotaoRegistry.getBotao("BOTAO_VERMELHO");
+        var botaoAzul = BotaoRegistry.getBotao("BOTAO_AZUL");
+        var botaoAmarelo = BotaoRegistry.getBotao("BOTAO_AMARELO");
 
-        // Clonagem do objeto original
-       // Produto produtoClonado = produtoOriginal.clonar();
+        System.out.println(botaoVermelho.toString());
+        System.out.println(botaoAzul.toString());
+        System.out.println(botaoAmarelo.toString());
 
-        // Exibição dos detalhes dos produtos
-    //    System.out.println("Produto Original: " + produtoOriginal);
-      //  System.out.println("Produto Clonado: " + produtoClonado);
+        botaoAmarelo.setLargura(200);
+
+        System.out.println("Depois de alterar a largura do botão amarelo:");
+        System.out.println(botaoAmarelo.toString());
+
+        var botaoAmarelo2 = BotaoRegistry.getBotao("BOTAO_AMARELO");
+    
+        System.out.println("Novo botão amarelo do registry:");
+        System.out.println(botaoAmarelo2.toString());
     }
 }

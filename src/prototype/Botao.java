@@ -38,4 +38,9 @@ public class Botao {
         this.tipoBorda = tipoBorda;
     }
 
+    @Override
+    public String toString() {
+        return "Botao [cor=" + cor + ", largura=" + largura + ", altura=" + altura + ", tipoBorda=" + tipoBorda + "]";
+    }
+
 }
